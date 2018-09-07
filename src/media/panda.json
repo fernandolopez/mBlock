@@ -1,5 +1,5 @@
 {
-	"objName": "Provincia",
+	"objName": "M-Panda",
 	"sounds": [{
 			"soundName": "eat",
 			"soundID": -1,
@@ -9,9 +9,15 @@
 			"format": ""
 		}],
 	"costumes": [{
-			"costumeName": "Provincia",
+			"costumeName": "Panda-a",
 			"baseLayerID": -1,
-			"baseLayerMD5": "provincia.svg",
+			"baseLayerMD5": "panda_a.svg",
+			"rotationCenterX": 0,
+			"rotationCenterY": 0
+		},{
+			"costumeName": "Panda-b",
+			"baseLayerID": -1,
+			"baseLayerMD5": "panda_b.svg",
 			"rotationCenterX": 0,
 			"rotationCenterY": 0
 		}],

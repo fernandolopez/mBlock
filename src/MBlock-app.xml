@@ -15,16 +15,16 @@
 
 	<!-- A universally unique application identifier. Must be unique across all AIR applications.
 	Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
-	<id>com.makeblock.Scratch3.4.5</id>
+	<id>ar.gob.abc.dpite.makeblock4alpha</id>
 
 	<!-- Used as the filename for the application. Required. -->
-	<filename>mBlock</filename>
+	<filename>DPITE Blocks</filename>
 
 	<!-- The name that is displayed in the AIR application installer. 
 	May have multiple values for each language. See samples or xsd schema file. Optional. -->
 	<name>
-        <text xml:lang="zh-CN">mBlock</text>
-		<text xml:lang="EN">mBlock - Based On Scratch From the MIT Media Lab</text>
+        <text xml:lang="zh-CN">DPITE Blocks</text>
+		<text xml:lang="EN">DPITE Blocks - Based On Makeblock mBlock</text>
 	</name>
 	
 	<!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade. 
@@ -42,7 +42,7 @@
 	</description>
 
 	<!-- Copyright information. Optional -->
-	<copyright>Makeblock</copyright>
+	<copyright>DPITE</copyright>
 
 	<!-- Publisher ID. Used if you're updating an application created prior to 1.5.3 -->
 	<!--<publisherID>Makeblock</publisherID> -->
@@ -51,7 +51,7 @@
 	<initialWindow>
 		<!-- The main SWF or HTML file of the application. Required. -->
 		<!-- Note: In Flash Builder, the SWF reference is set automatically. -->
-		<content>MBlock.swf</content>
+		<content>DPITEBlocks.swf</content>
 		
 
 		<!-- The type of system chrome to use (either "standard" or "none"). Optional. Default standard. -->
@@ -159,13 +159,13 @@
 	<fileType> 
 
 			<!-- The name that the system displays for the registered file type. Required. -->
-			 <name>mBlock.ProjectFile</name> 
+			 <name>DPITEBlocks.ProjectFile</name> 
 
 			<!-- The extension to register. Required. -->
 			 <extension>sb2</extension> 
 			
 			<!-- The description of the file type. Optional. -->
-			 <description>mBlock Project File</description> 
+			 <description>DPITEBlocks Project File</description> 
 			
 			<!-- The MIME content type. -->
 			 <contentType>application/mblock.project-file</contentType> 
@@ -236,8 +236,8 @@
     <!-- </android> -->
 	<!-- End of the schema for adding the android specific tags in AndroidManifest.xml file -->
 	<extensions>
-    	<extensionID>cc.makeblock.BluetoothExt</extensionID>
-	    <extensionID>cc.makeblock.AIRSerial</extensionID>
-    	<extensionID>cc.makeblock.AirHID</extensionID>
+    	<extensionID>ar.gob.abc.dpite.makeblock4alpha.BluetoothExt</extensionID>
+	    <extensionID>ar.gob.abc.dpite.makeblock4alpha.AIRSerial</extensionID>
+    	<extensionID>ar.gob.abc.dpite.makeblock4alpha.AirHID</extensionID>
     </extensions>
 </application>

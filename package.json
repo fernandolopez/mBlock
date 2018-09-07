@@ -1,9 +1,9 @@
 {
-  "name": "mBlock",
+  "name": "DPITEBlocks",
   "version": "4.0.0",
-  "description": "mblock 4.0",
+  "description": "DPITE Blocks 4.0",
   "main": "./app/main.js",
-  "homepage": "http://mblock.cc",
+  "homepage": "http://dte.abc.gob.ar",
   "email": "tec-support@makeblock.com",
   "scripts": {
     "rebuild-serialport": "electron-rebuild -f -w serialport",
@@ -43,8 +43,16 @@
   },
   "build": {
     "appId": "cc.mblock",
-    "files": ["app", "i18n", "node_modules"],
-    "extraResources": ["plugins", "tools", "web"],
+    "files": [
+      "app",
+      "i18n",
+      "node_modules"
+    ],
+    "extraResources": [
+      "plugins",
+      "tools",
+      "web"
+    ],
     "appx": {
       "publisher": "CN=92193A5C-5088-4483-8766-AB5E50CFDC9F"
     },
