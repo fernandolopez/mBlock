@@ -8,7 +8,7 @@ package extensions
 		private var _name:String = "";
 		public function DeviceManager()
 		{
-			onSelectBoard("mbot_uno");
+			onSelectBoard("tbot");
 		}
 		public static function sharedManager():DeviceManager{
 			if(_instance==null){
@@ -43,6 +43,9 @@ package extensions
 				}else if(_board.indexOf("mega_pi") > -1){
 					MBlock.app.extensionManager.singleSelectExtension("MegaPi");
 				}
+				}else if(_board.indexOf("tbot") > -1){
+					MBlock.app.extensionManager.singleSelectExtension("TBOT");
+				}
 //			}
 			MBlock.app.topBarPart.setBoardTitle();
 		}
@@ -68,6 +71,9 @@ package extensions
 			}
 			else if(_board.indexOf("mega_pi")>=0){
 				_name = "Mega Pi";
+			}
+			else if(_board.indexOf("tbot")>=0){
+				_name = "T-BOT";
 			}
 			return _name;
 		}

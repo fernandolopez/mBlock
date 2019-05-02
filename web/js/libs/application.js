@@ -190,6 +190,10 @@ function Application(flash){
 			window.loadScript('mega_pi', 'flash-core/ext/libraries/mega_pi/js/MegaPi.js', function () {
 				_flash.setRobotName(name); // me/mega_pi_mega2560
 			});
+        }  else if (name.indexOf('tbot') > -1) { // DPITE T-BOT
+			window.loadScript('tbot', 'flash-core/ext/libraries/tbot/js/TBOT.js', function () {
+				_flash.setRobotName(name); // dpite/tbot
+			});
 		} 
     }
     /**

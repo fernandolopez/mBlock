@@ -338,7 +338,22 @@ function AppMenu(app){
                     },
                     {
                         type:"separator"
-                    }/*,
+                    },
+                    {
+                        name:"dpite",
+                        label:"DPITE",
+                        enabled: false,
+                    },
+                    {
+                        name:"dpite/tbot",
+                        label:"T-BOT",
+                        type:"checkbox",
+                        checked:_boards.selected("dpite/tbot"),
+                        click:function(item, focusedWindow){
+                            _boards.selectBoard(item.name);
+                        }
+                    }
+                    /*,
                     {
                         name:"Others",
                         label: _translator.map('Others'),

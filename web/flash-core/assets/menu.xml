@@ -63,6 +63,8 @@
 		<item name="me/auriga_mega2560" label="mBot Ranger (Auriga)" />
 		<item name="me/mega_pi_mega2560" label="Ultimate 2.0 (Mega Pi)" />
 		<item isSeparator="true" />
+        <item name="dpite/tbot" label="DPITE T-BOT" />
+		<item isSeparator="true" />
 		<item name="Others" label="Others" enabled="false" />
 		<item name="picoboard_unknown" label="PicoBoard" />
 	</subMenu>

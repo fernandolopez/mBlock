@@ -18,7 +18,8 @@ const boardFirmwareMap = {
     'me/orion_uno': 'uno.hex',
     'me/auriga_mega2560': 'auriga.hex',
     'me/mbot_uno': 'mbot.hex',
-    'me/mega_pi_mega2560': 'mega_pi.hex'
+    'me/mega_pi_mega2560': 'mega_pi.hex',
+    'dpite/tbot': 'nano328.hex',
 };
 
 const boardDefaultProgramMap = {
@@ -47,6 +48,7 @@ var FirmwareUploader = {
                     'flash:w:tools/hex/'+hexFileName+':i'
                 ]);
             case 'arduino_nano328':
+            case 'dpite/tbot':
                 return commonParam.concat([
                     '-patmega328p', '-carduino', '-P'+serialPort, '-b57600', '-D', '-U', 
                     'flash:w:tools/hex/'+hexFileName+':i'

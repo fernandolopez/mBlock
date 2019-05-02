@@ -185,7 +185,7 @@ package util
 		
 		static private function __newProject(projectName:String=null):void
 		{
-//			DeviceManager.sharedManager().board = "mbot_uno";
+//			DeviceManager.sharedManager().board = "tbot";
 //			trace("__newProject", projectName);
 			MBlock.app.createNewProject();
 		}
@@ -262,6 +262,9 @@ package util
 				case "mega pi":
 					DeviceManager.sharedManager().onSelectBoard("me/mega_pi");
 					break;
+				case "tbot":
+					DeviceManager.sharedManager().onSelectBoard("dpite/tbot");
+					break;
 			}
 			if(value.toLowerCase().indexOf("arduino")>-1)
 			{
@@ -276,6 +279,8 @@ package util
 					return "mBot";
 				case "Me Auriga":
 					return "mBot Ranger";
+				case "T-BOT":
+					return "DPITE T-BOT";
 			}
 			return "";
 		}

@@ -45,7 +45,7 @@ function mBlock(){
         _emotions = new Emotions(self);
 		
 		self.init();
-		_boards.selectBoard("me/mbot_uno");
+		_boards.selectBoard("dpite/tbot");
 	})
 	ipcMain.on('saveProject',function(event,arg){
 		_project.saveProject(arg.title,arg.data);
@@ -124,6 +124,9 @@ function mBlock(){
 		}
 		if(currentBoardName.indexOf('orion_uno') > -1) {
 		    currentBoardName = 'me/orion_uno';
+		}
+		if(currentBoardName.indexOf('tbot') > -1) {
+		    currentBoardName = 'dpite/tbot';
 		}
 		/*if(currentBoardName.indexOf('') > -1) {
 		    currentBoardName = 'me/';

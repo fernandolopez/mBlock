@@ -4,7 +4,7 @@
   "description": "DPITE Blocks 4.0",
   "main": "./app/main.js",
   "homepage": "http://dte.abc.gob.ar",
-  "email": "tec-support@makeblock.com",
+  "email": "_CAMBIAR_@abc.gob.ar",
   "scripts": {
     "rebuild-serialport": "electron-rebuild -f -w serialport",
     "rebuild-hid": "electron-rebuild -f -w node-hid",
@@ -17,32 +17,34 @@
     "dist-windows-store": "build --windows appx",
     "postinstall": "install-app-deps"
   },
-  "repository": "https://git.oschina.net/makeblock/mblock-for-myh",
+  "repository": "https://github.com/fernandolopez/mBlock.git",
   "keywords": [
     "mBlock"
   ],
   "author": {
-    "name": "Makeblock Co., Ltd.",
-    "email": "tec-support@makeblock.com"
+    "name": "DPITE",
+    "email": "_CAMBIAR_@abc.gob.ar"
   },
   "license": "GPL",
   "devDependencies": {
+    "electron": "^2.0.9",
     "electron-builder": "^10.12.0",
     "electron-prebuilt": "^1.4.13",
     "electron-rebuild": "^1.4.0"
   },
   "dependencies": {
-    "node-hid": "^0.5.2",
-    "os-locale": "^2.0.0",
-    "sudo-prompt": "^6.2.1",
-    "serialport": "^4.0.7",
-    "express": "^4.14.0",
+    "asar": "^0.14.5",
     "bluetooth-serial-port": "^2.1.1",
     "debug": "^2.4.5",
-    "i18n": "^0.8.3"
+    "express": "^4.14.0",
+    "i18n": "^0.8.3",
+    "node-hid": "^0.5.2",
+    "os-locale": "^2.0.0",
+    "serialport": "^4.0.7",
+    "sudo-prompt": "^6.2.1"
   },
   "build": {
-    "appId": "cc.mblock",
+    "appId": "ar.gob.abc.dpite.makeblock",
     "files": [
       "app",
       "i18n",
@@ -54,7 +56,7 @@
       "web"
     ],
     "appx": {
-      "publisher": "CN=92193A5C-5088-4483-8766-AB5E50CFDC9F"
+      "publisher": "CN=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
     },
     "mac": {
       "category": ""
